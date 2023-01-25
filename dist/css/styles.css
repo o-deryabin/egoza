@@ -11,17 +11,25 @@
 .button-prev,
 .button-next {
   position: absolute;
-  display: none;
   z-index: 10;
   top: 50%;
   line-height: 1;
   margin-top: -2em;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #ccc;
 }
 
 .button-prev:hover,
 .button-next:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .button-prev.swiper-button-disabled,
@@ -31,7 +39,7 @@
 
 .button-prev img,
 .button-next img {
-  max-width: 50px;
+  max-width: 30px;
 }
 
 .button-prev {
@@ -761,11 +769,6 @@ ul {
     font-size: 35px;
   }
 
-  .button-prev,
-  .button-next {
-    display: block;
-  }
-
   .header__burger {
     width: 40px;
     height: 30px;
@@ -1105,6 +1108,13 @@ ul {
   .footer__bottom {
     margin-top: 20px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-prev,
+  .button-next {
+    display: none;
   }
 }
 
