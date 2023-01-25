@@ -4,8 +4,510 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Егоза</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
-  <body></body>
+  <body>
+    @@include('html/header.html')
+    <main>
+      @@include('html/main-banner.html')
+
+      <section class="section section--features">
+        <div class="container">
+          <h2 class="section__title">
+            Преимущества фундамента из наших винтовых свай
+          </h2>
+          <div class="section__grid">
+            <div class="section__item item">
+              <img src="img/features/1.png" alt="" class="item__image" />
+              <h5 class="item__title">Быстрая установка</h5>
+              <p class="item__text">
+                Ждать застывания фундамента нет необходимости: стены можно
+                возводить сразу после возведения фундамента
+              </p>
+            </div>
+            <div class="section__item item">
+              <img src="img/features/2.png" alt="" class="item__image" />
+              <h5 class="item__title">Точный монтаж</h5>
+              <p class="item__text">
+                Благодаря острому литому наконечнику погрешность при монтаже не
+                превышает 10 мм
+              </p>
+            </div>
+            <div class="section__item item">
+              <img src="img/features/3.png" alt="" class="item__image" />
+              <h5 class="item__title">Несущая способность</h5>
+              <p class="item__text">
+                Предусмотренная нагрузка на одну винтовую сваю — 5-7 тонн. при
+                рекомендванном монтаже с шагом не более 2 метров.
+              </p>
+            </div>
+            <div class="section__item item">
+              <img src="img/features/4.png" alt="" class="item__image" />
+              <h5 class="item__title">Любой грунт, любое время</h5>
+              <p class="item__text">
+                Сваи можно монтировать круглый год, при условии, что заглубление
+                должно быть ниже точки промерзания грунта.
+              </p>
+            </div>
+          </div>
+          <h3 class="section__subtitle">
+            При соблюдении технологии монтажа и технологических рекомендаций, мы
+            гарантируем, что свая прослужит Вам минимум 20 лет
+          </h3>
+        </div>
+      </section>
+
+      <section class="section section--catalog">
+        <div class="container">
+          <h2 class="section__title">Каталог продукции</h2>
+          <div class="section__content">
+            <div class="section__left">
+              <h5 class="section__subtitle">Винтовые сваи</h5>
+              <ul class="section__list">
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Лопастные
+                  сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" />
+                  Двухлопастные сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Бурозабивные
+                  сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Буроопускные
+                  сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Сваи для
+                  вечномерзлых грунтов
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Усиленые
+                  винтовые сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Сваи шуруп
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Сваи с
+                  муфтовым соединением
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" />
+                  Многоступенчатые сваи
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка свая8.png" alt="" /> Свайные
+                  ростверки
+                </li>
+              </ul>
+            </div>
+            <div class="section__right">
+              <h5 class="section__subtitle">Проектирование</h5>
+              <ul class="section__list">
+                <li class="section__item">
+                  <img src="img/catalog/иконка свайный фундамент.png" alt="" />
+                  Свайный фундамент под ключ
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка типовые проекты.png" alt="" />
+                  Типовые проекты
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка расчет проекта.png" alt="" />
+                  Расчет индивидуального проекта
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка сваи оптом.png" alt="" /> Сваи
+                  оптом
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/иконка 3д забор.png" alt="" /> 3D-забор
+                  типа «Топаз»
+                </li>
+                <li class="section__item">
+                  <img
+                    src="img/catalog/иконка козырьковые заграждения.png"
+                    alt=""
+                  />
+                  Козырьковые заграждения
+                </li>
+                <li class="section__item">
+                  <img
+                    src="img/catalog/икаонка противоподкопные сооружения.png"
+                    alt=""
+                  />
+                  Противоподкопные устройства
+                </li>
+                <li class="section__item">
+                  <img src="img/catalog/икаонка колючая проволока.png" alt="" />
+                  Колючая проволока «Егоза»
+                </li>
+                <li class="section__item">
+                  <img
+                    src="img/catalog/иконка ворота калитки шлагбаумы.png"
+                    alt=""
+                  />
+                  Ворота, калитки, шлагбаумы
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__footer">
+            <a href="#" class="section__link">Полный каталог</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--video">
+        <img src="img/video.png" alt="" />
+      </section>
+
+      <section class="section section--history">
+        <div class="container">
+          <div class="section__top">
+            <div class="section__left">
+              <div class="section__text">
+                <p>
+                  <strong>Южно-уральский завод винтовых свай Егоза</strong> —
+                  российский производитель винтовых фундаментов.
+                </p>
+                <p>
+                  С 2015 года разрабатываем, проектируем, производим и реализуем
+                  винтовые сваи, свайные ростверки и фундаменты под ключ оптом и
+                  в розницу.
+                </p>
+                <p>
+                  С 2017 года мы состоим в Международной ассоциации
+                  фундаментостроителей
+                </p>
+              </div>
+              <img src="img/history/logo.png" alt="" />
+            </div>
+            <div class="section__right">
+              <img src="img/history/2.png" alt="" />
+            </div>
+          </div>
+          <div class="section__text mt-5">
+            С 2012 года Южно-уральский завод винтовых свай Егоза работает в
+            партнёрстве с Заводом
+            <a href="#">периметральных ограждений «Егоза»</a>, входящим в группу
+            компаний ООО «Русская стратегия», и являющимся специализированным
+            предприятием, работающем на рынке защитных ограждений и
+            металлических свай с 1992 года.
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--partners">
+        <div class="container">
+          <h2 class="section__title">Нам доверяют свои объекты:</h2>
+          <div class="swiper section__slider section__slider--partners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/partners/logo-rosseti.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Логотип_ГК_ФСК.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Росатом.svg.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Росатом.svg.png" alt="" />
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--sertificaty">
+        <div class="container">
+          <h2 class="section__title">
+            Производство и продукция сертифицированы
+          </h2>
+          <div class="swiper section__slider section__slider--sertificaty">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-1.png"
+                >
+                  <img src="img/sertificaty/cert-1.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-2.png"
+                >
+                  <img src="img/sertificaty/cert-2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-3.png"
+                >
+                  <img src="img/sertificaty/cert-3.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-6.png"
+                >
+                  <img src="img/sertificaty/cert-6.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-7.png"
+                >
+                  <img src="img/sertificaty/cert-7.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-8.png"
+                >
+                  <img src="img/sertificaty/cert-8.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-9.png"
+                >
+                  <img src="img/sertificaty/cert-9.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-10.png"
+                >
+                  <img src="img/sertificaty/cert-10.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+          <div class="section__footer">
+            <a href="#" class="section__link">Подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--rewievs">
+        <div class="container">
+          <h2 class="section__title">Отзывы и благодарности</h2>
+          <div class="swiper section__slider section__slider--rewievs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <img src="img/rewievs/шаблон благодраности.png" alt="" />
+                <div class="slide__content">
+                  <p class="slide__text">
+                    Винтовые сваи производства Егозы изменили всю мою жизнь, не
+                    представляю, как жил без них раньше! Эти чудесные, идеально
+                    ровные витки, благородный насыщенный черный цвет,
+                    потрясающая гладкость, обеспечивающая идеальное скольжение в
+                    любом грунте! Забивал бы и завинчивал бесконечно, но свай
+                    было всего полтораста! Счастье было недолгим, но эти
+                    волшебные мгновения я вспоминаю до сих пор!
+                  </p>
+                  <h6 class="slide__name">
+                    Василий Алибабаевич, директор ООО “Рога и копыта”
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--steps">
+        <div class="container">
+          <h2 class="section__title">
+            4 простых шага к вашему новому фундаменту
+          </h2>
+          <div class="section__grid">
+            <div class="section__item item">
+              <div class="item__image">
+                <img src="img/steps/1.png" alt="" />
+              </div>
+              <p class="item__text">
+                Вы оставляете заявку на сайте, либо отправляете ваш запрос на
+                почтуa <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+              </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__image">
+                <img src="img/steps/2.png" alt="" />
+              </div>
+              <p class="item__text">
+                Через 15 минут наш специалист связывается с вами для уточнения
+                деталей
+              </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__image">
+                <img src="img/steps/3.png" alt="" />
+              </div>
+              <p class="item__text">
+                Мы составляем и согласовываем подробное техническое задание по
+                вашему проекту
+              </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__image">
+                <img src="img/steps/4.png" alt="" />
+              </div>
+              <p class="item__text">Заключаем договор и приступаем к работе!</p>
+            </div>
+          </div>
+          <div class="section__footer">
+            <button type="button" class="section__btn">Оставить заявку!</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--map">
+        <h2 class="section__title">
+          География поставок южно-уральского завода винтовых свай
+        </h2>
+        <!-- <img class="section__image" src="img/map.png" alt="" /> -->
+        <div class="section__image">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A105efdf19cca5747ef8f9bac1a7232d7ba984e90e98af29f22762f43330e71ef"
+            frameborder="0"
+            allowfullscreen="true"
+            width="100%"
+            height="600px"
+            style="display: block"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section section--menu">
+        <div class="container section__container">
+          <a href="#" class="section__link">Что такое винтовые сваи</a>
+          <a href="#" class="section__link text-md-center"
+            >Отзывы о работе с нами</a
+          >
+          <a href="#" class="section__link text-md-end">Полезные статьи</a>
+          <a href="#" class="section__link">Фундамент на винтовых сваях</a>
+          <a href="#" class="section__link text-md-center">Новости завода</a>
+          <a href="#" class="section__link text-md-end"
+            >География поставок УралЗВС</a
+          >
+          <a href="#" class="section__link">Информация для проектировщиков</a>
+          <a href="#" class="section__link text-md-center">Фотогалерея</a>
+          <a href="#" class="section__link text-md-end"
+            >Политика конфиденциальности</a
+          >
+        </div>
+      </section>
+
+      @@include('html/footer.html')
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".section__slider--partners", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 100,
+          },
+          992: {
+            spaceBetween: 100,
+          },
+        },
+      });
+      var swiper = new Swiper(".section__slider--sertificaty", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 100,
+          },
+          992: {
+            slidesPerView: 6,
+          },
+        },
+      });
+      var swiper = new Swiper(".section__slider--rewievs", {
+        slidesPerView: 1,
+        loop: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
