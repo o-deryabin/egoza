@@ -199,7 +199,7 @@ ul {
   background-color: #323232;
   padding: 10px 0;
   position: relative;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 .header__burger {
@@ -261,7 +261,7 @@ ul {
 }
 
 .header-headings.active {
-  z-index: 1000;
+  z-index: 900;
 }
 
 .header-headings.active .header-headings__backdrop {
@@ -269,7 +269,7 @@ ul {
 }
 
 .header-headings.active .header-headings__menu {
-  z-index: 1010;
+  z-index: 910;
   transform: translateX(0px);
 }
 
@@ -295,6 +295,7 @@ ul {
   transform: translateX(-100%);
   overflow-y: auto;
   transition: 0.3s;
+  padding-bottom: 50px;
 }
 
 .header-headings .menu__item {
