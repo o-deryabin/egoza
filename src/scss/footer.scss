@@ -149,6 +149,13 @@
       color: #fff;
       font-weight: 600;
       margin-top: 20px;
+      border: 2px solid transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        background: transparent;
+        border-color: #fff;
+      }
     }
 
     &__text {

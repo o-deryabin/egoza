@@ -44,6 +44,9 @@
       border-radius: 10px;
       border: none;
       width: 100%;
+      &:focus {
+        outline: none;
+      }
       &::placeholder {
         font-weight: 600;
       }
@@ -71,6 +74,13 @@
     padding: 5px 20px;
     color: #fff;
     font-weight: 600;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      background: transparent;
+      border-color: #fff;
+    }
     @media (max-width: 1400px) {
       font-size: 14px;
     }
@@ -225,7 +235,8 @@
     z-index: -1;
     transition: 0.3s;
     background: $black;
-    padding: 20px;
+    padding: 0.25rem 1rem;
+    border-radius: 0.375rem;
 
     li {
       float: none;
@@ -245,8 +256,9 @@
     z-index: -1;
     transition: 0.3s;
     background: $black;
-    padding: 20px;
+    padding: 0.25rem 1rem;
     min-width: 300px;
+    border-radius: 0.375rem;
   }
   &__list {
     display: flex;

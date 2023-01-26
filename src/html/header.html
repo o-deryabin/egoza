@@ -1,7 +1,25 @@
 <header class="header">
   <div class="container header__container">
     <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
-    <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+
+    <button
+      class="btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
 
     <form action="" class="header__search">
       <input type="text" class="header__search-input" placeholder="Поиск по" />
@@ -15,8 +33,22 @@
       <div class="header__contact header__email">
         <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
       </div>
-      <button type="button" class="header__btn">Задать вопрос</button>
-      <button type="button" class="header__btn">Заказать звонок</button>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
     </div>
   </div>
 </header>
