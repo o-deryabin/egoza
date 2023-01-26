@@ -118,7 +118,77 @@
 
 <div class="header-headings">
   <div class="header-headings__backdrop"></div>
-  <div class="header-headings__menu"></div>
+  <div class="header-headings__menu">
+    <form action="" class="position-relative p-3">
+      <input type="text" class="form-control" placeholder="Поиск по" />
+    </form>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="">Каталог продукции</a></li>
+      <li class="menu__item menu__item_parent item-parent_js">
+        <a href="">Наши проекты</a>
+        <ul class="menu__submenu menu">
+          <li class="menu__item"><a href="#">второй уровень</a></li>
+          <li class="menu__item menu__item_parent item-parent_js">
+            <a href="#">второй уровень</a>
+            <ul class="menu__submenu menu">
+              <li class="menu__item"><a href="#">третий уровень</a></li>
+              <li class="menu__item">
+                <a href="#">третий уровень</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu__item"><a href="">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="">Гарантия</a></li>
+      <li class="menu__item"><a href="">Партнёрам</a></li>
+      <li class="menu__item"><a href="">О компании</a></li>
+      <li class="menu__item"><a href="">Отзывы</a></li>
+      <li class="menu__item"><a href="">Контакты</a></li>
+    </ul>
+    <button
+      class="btn dropdown-toggle mt-4"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
+    <div class="mt-4 p-3">
+      <div class="header__contact header__phone">
+        <a href="tel:88002222081">8 800 222 20 81</a>
+      </div>
+      <div class="header__contact header__email mt-2">
+        <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+      </div>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
+    </div>
+  </div>
 </div>
 
     <main>
@@ -454,14 +524,17 @@
         </div>
       </section>
 
-      <!-- <section class="section section--about">
+      <section class="section section--about">
         <div class="container">
-          <h2 class="section__title">
+          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Южно-уральский Завод винтовых свай Егоза — это:
           </h2>
-          <div class="section__content">
-            <img src="img/about/background.png" alt="" />
-            <p class="section__text section__text--1">
+          <div
+            class="section__content wow animate__fadeIn"
+            data-wow-duration="1s"
+          >
+            <img src="img/about/background2.png" alt="" />
+            <!-- <p class="section__text section__text--1">
               собственное производство и собственный автопарк
             </p>
             <p class="section__text section__text--2">
@@ -478,13 +551,13 @@
             </p>
             <p class="section__text section__text--3">
               проверенные поставщики и качественные материалы
-            </p>
+            </p> -->
           </div>
           <div class="section__footer">
             <a href="">Подробнее о компании</a>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="section section--partners">
         <div class="container">
@@ -1184,6 +1257,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
 
     <!-- Initialize Wow animate -->

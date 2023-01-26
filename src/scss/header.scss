@@ -2,14 +2,17 @@
   background-color: #323232;
   font-weight: 600;
   padding-top: 50px;
+
   @media (max-width: 1200px) {
     display: none;
   }
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__logo {
     max-width: 200px;
     @media (max-width: 1200px) {
@@ -19,6 +22,7 @@
       width: 100%;
     }
   }
+
   &__sity {
     color: #fff;
     img {
@@ -26,6 +30,7 @@
       margin-right: 5px;
     }
   }
+
   &__search {
     position: relative;
     width: 200px;
@@ -52,6 +57,7 @@
       }
     }
   }
+
   &__contact a {
     color: #fff;
     text-decoration: none;
@@ -59,6 +65,7 @@
       font-size: 14px;
     }
   }
+
   &__contacts {
     display: flex;
     align-items: center;
@@ -67,6 +74,7 @@
       margin-left: 20px;
     }
   }
+
   &__btn {
     background-color: $blue;
     border: none;
@@ -88,7 +96,7 @@
 
   &--mobile {
     background-color: #323232;
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
     z-index: 2000;
     @media (min-width: 1200px) {
@@ -199,21 +207,31 @@
     }
     &__menu {
       position: relative;
-      width: 247px;
+      width: 80%;
       background: $black;
       top: 0;
       height: 100vh;
       left: 0;
-      transform: translateX(-250px);
+      transform: translateX(-100%);
       overflow-y: auto;
       transition: 0.3s;
+    }
+
+    .menu {
+      &__item {
+        padding: 0.5rem 1rem;
+        position: relative;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
 
 .nav {
   background-color: $black;
-  // padding: 10px 0;
   position: relative;
   z-index: 100;
   @media (max-width: 1200px) {
@@ -275,5 +293,141 @@
   &__item a {
     color: #fff;
     text-decoration: none;
+  }
+}
+
+.menu__submenu {
+  display: none;
+  position: absolute;
+  width: 245px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background: #fff;
+
+  -webkit-box-shadow: 0 3px 38px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 38px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1199px) {
+  .menu__submenu {
+    width: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu__submenu {
+    position: relative;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  .menu__submenu > li > a {
+    color: #fff;
+  }
+}
+
+.menu__submenu .menu__submenu {
+  width: 220px;
+  top: 0;
+  left: 100%;
+  border-left: 1px solid #4887d8;
+}
+
+@media (max-width: 1270px) {
+  .menu__submenu .menu__submenu {
+    left: auto;
+    right: 100%;
+    border-left: 0;
+    border-right: 1px solid #4887d8;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu__submenu .menu__submenu {
+    border-left: 0;
+    width: 100%;
+    position: relative;
+    right: auto;
+    border: 0;
+  }
+}
+
+.menu__submenu > li > a {
+  display: inline-block;
+  color: #969ba2;
+  line-height: 1.2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.menu__submenu > li > a:before {
+  content: url("../img/menu-arrow-right.svg");
+  display: inline-block;
+  width: 7px;
+  top: 7px;
+  position: absolute;
+  left: 30px;
+  opacity: 0;
+  line-height: 1.5;
+}
+
+.menu__submenu > li > a:hover {
+  color: #4887d8;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu__submenu > li > a:hover:before {
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.menu__submenu .menu__item_parent {
+  position: static;
+}
+
+@media (max-width: 991px) {
+  .menu__submenu .menu__item_parent {
+    position: relative;
+  }
+}
+
+.menu__item_parent .arrow {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media (max-width: 991px) {
+  .menu__item_parent .arrow {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+  }
+  .menu__item_parent .arrow svg {
+    width: 12px !important;
   }
 }
