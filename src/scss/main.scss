@@ -653,4 +653,225 @@
       }
     }
   }
+
+  &--grid {
+    margin-top: 50px;
+    @media (min-width: 768px) {
+      margin-top: 100px;
+    }
+
+    &-gray {
+      background-color: #fafafa;
+
+      padding: 50px 0;
+      -webkit-box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+
+      @media (min-width: 768px) {
+        padding: 100px 0;
+      }
+    }
+
+    .section {
+      &__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-top: 30px;
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 60px;
+          margin-top: 60px;
+        }
+      }
+      &__title {
+        text-align: center;
+      }
+    }
+
+    .item {
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      &__image {
+        width: 100%;
+        border-radius: 5px;
+      }
+      &__content {
+        text-align: center;
+        background-color: $ligth-blue;
+        padding: 30px;
+        border-radius: 5px;
+      }
+      &__title {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &--tabs {
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    padding: 50px 0;
+    -webkit-box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
+    @media (min-width: 768px) {
+      margin-top: 100px;
+      padding: 100px 0;
+    }
+
+    .section {
+      &__title {
+        text-align: center;
+      }
+    }
+
+    .tab {
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 70px;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__link {
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        &.active {
+          color: $blue;
+        }
+      }
+
+      &-content {
+        margin-top: 50px;
+      }
+
+      &-pane {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &--feedback {
+    background-color: $blue;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    @media (min-width: 768px) {
+      padding: 100px 0;
+    }
+
+    .section {
+      &__text {
+        font-size: 20px;
+      }
+
+      &__btn {
+        background-color: $orange;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 8px 20px;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        &:hover {
+          background: transparent;
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+  &--list {
+    padding: 50px 0;
+    @media (min-width: 768px) {
+      padding: 100px 0;
+    }
+
+    .section {
+      &__title {
+        text-align: center;
+      }
+
+      &__content {
+        margin-top: 50px;
+        @media (min-width: 768px) {
+          margin-top: 100px;
+        }
+      }
+
+      &__subtitle {
+        font-weight: 400;
+        text-align: center;
+      }
+
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        @media (min-width: 768px) {
+          margin-top: 70px;
+        }
+      }
+    }
+    .item {
+      flex: 1 1 50%;
+      max-width: 50%;
+
+      @media (min-width: 768px) {
+        flex: 1 1 20%;
+        max-width: 20%;
+      }
+
+      &__image {
+        width: 100%;
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+
+  &--link {
+    text-align: center;
+
+    margin: 50px 0;
+    @media (min-width: 768px) {
+      margin: 100px 0;
+      font-size: 25px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
 }
