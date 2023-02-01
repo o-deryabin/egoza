@@ -748,13 +748,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
       }
       &__link {
         border: none;
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 600;
         &.active {
           color: $blue;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 20px;
         }
       }
 

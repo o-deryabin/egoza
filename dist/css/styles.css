@@ -976,11 +976,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section--tabs .tab__link {
   border: none;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -1403,6 +1404,10 @@ ul {
 
   .section--tabs .tab {
     margin-top: 70px;
+  }
+
+  .section--tabs .tab__link {
+    font-size: 20px;
   }
 
   .section--feedback {
