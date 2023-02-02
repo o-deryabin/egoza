@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Егоза</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+
+    <button
+      class="btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
+
+    <form action="" class="header__search">
+      <input type="text" class="header__search-input" placeholder="Поиск по" />
+      <img src="img/лупа.png" alt="" class="header__search-icon" />
+    </form>
+
+    <div class="header__contacts">
+      <div class="header__contact header__phone">
+        <a href="tel:88002222081">8 800 222 20 81</a>
+      </div>
+      <div class="header__contact header__email">
+        <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+      </div>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="nav">
+  <div class="container">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="nav__item">
+        <a href="">Наши проекты</a>
+        <ul class="nav__list--2">
+          <li class="nav__item"><a href="#">второй уровень</a></li>
+          <li class="nav__item">
+            <a href="#">второй уровень</a>
+            <ul class="nav__list--3">
+              <li class="nav__item"><a href="#">третий уровень</a></li>
+              <li class="nav__item">
+                <a href="#">третий уровень </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item"><a href="">Доставка и оплата</a></li>
+      <li class="nav__item"><a href="">Гарантия</a></li>
+      <li class="nav__item"><a href="">Партнёрам</a></li>
+      <li class="nav__item"><a href="">О компании</a></li>
+      <li class="nav__item"><a href="">Отзывы</a></li>
+      <li class="nav__item"><a href="">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="header--mobile">
+  <div class="container header__container">
+    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+    <div class="header__burger"><span></span></div>
+  </div>
+</div>
+
+<div class="header-headings">
+  <div class="header-headings__backdrop"></div>
+  <div class="header-headings__menu">
+    <form action="" class="position-relative p-3">
+      <input type="text" class="form-control" placeholder="Поиск по" />
+    </form>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="menu__item menu__item_parent item-parent_js">
+        <a href="">Наши проекты</a>
+        <ul class="menu__submenu menu">
+          <li class="menu__item"><a href="#">второй уровень</a></li>
+          <li class="menu__item menu__item_parent item-parent_js">
+            <a href="#">второй уровень</a>
+            <ul class="menu__submenu menu">
+              <li class="menu__item"><a href="#">третий уровень</a></li>
+              <li class="menu__item">
+                <a href="#">третий уровень</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu__item"><a href="">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="">Гарантия</a></li>
+      <li class="menu__item"><a href="">Партнёрам</a></li>
+      <li class="menu__item"><a href="">О компании</a></li>
+      <li class="menu__item"><a href="">Отзывы</a></li>
+      <li class="menu__item"><a href="">Контакты</a></li>
+    </ul>
+    <button
+      class="btn dropdown-toggle mt-4"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
+    <div class="my-4 p-3">
+      <div class="header__contact header__phone">
+        <a href="tel:88002222081">8 800 222 20 81</a>
+      </div>
+      <div class="header__contact header__email mt-2">
+        <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+      </div>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
+    </div>
+  </div>
+</div>
+
+    <main>
+      <section class="section section--pagination">
+        <div class="container">
+          <ul class="pagination">
+            <li class="pagination__item">Главная</li>
+            <li class="pagination__item">Контакты</li>
+          </ul>
+        </div>
+      </section>
+
+      <h1 class="page-title">Наши контакты:</h1>
+
+      <section class="section section--contacts">
+        <div class="container">
+          <div class="section__content">
+            <h3 class="section__subtitle">Офис в Москве</h3>
+            <div class="d-xxl-flex mt-5">
+              <div class="section__left">
+                <a href="tel:+74993488163" class="section__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                    />
+                  </svg>
+                  +7 (499) 348-81-63
+                </a>
+                <a href="mailto:info@uralzvs.ru" class="section__link mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                    />
+                  </svg>
+                  info@uralzvs.ru
+                </a>
+              </div>
+              <div class="section__right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z"
+                  />
+                </svg>
+                <div class="">
+                  <p class="section__address">
+                    108814, Москва, Калужское шоссе, 24-й километр, д.1, стр.1
+                    метро Теплый стан, бизнес-центр «Высота»
+                  </p>
+                  <p class="section__hours">
+                    пн-пт 08:00-17:00, обед 12:00-13:00, выходные сб-вс (время
+                    GMT+4, Москва)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section__map mt-5">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A7zojNkHoQvPmTJKYT35BT0ZmHLiCQ56Q"
+                frameborder="0"
+                allowfullscreen="true"
+                width="100%"
+                height="250px"
+                style="display: block"
+              ></iframe>
+            </div>
+          </div>
+          <div class="section__content">
+            <h3 class="section__subtitle">
+              Центральный офис и производство в Миассе
+            </h3>
+            <div class="d-xxl-flex mt-5">
+              <div class="section__left">
+                <a href="tel:+74993488163" class="section__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                    />
+                  </svg>
+                  +7 (3513) 289-840<br />
+                  +7 (3513) 289-850
+                </a>
+                <a href="mailto:info@uralzvs.ru" class="section__link mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                    />
+                  </svg>
+                  info@uralzvs.ru
+                </a>
+              </div>
+              <div class="section__right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z"
+                  />
+                </svg>
+                <div class="">
+                  <p class="section__address">
+                    456300, Челябинская область, город Миасс, ул. Объездная
+                    дорога, 4/49
+                  </p>
+                  <p class="section__hours">
+                    пн-пт 08:00-17:00, обед 12:00-13:00, выходные сб-вс (время
+                    GMT+6, Челябинск)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section__map mt-5">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3Aad7cca2774efc8c7cd1fd160d30886a9e4e138e7e38740a8f86b0e103a12dfd4"
+                frameborder="0"
+                allowfullscreen="true"
+                width="100%"
+                height="250px"
+                style="display: block"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--table">
+        <div class="container">
+          <div class="section__title">Карточка партнера</div>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Полное и краткое наименование предприятия</td>
+                <td class="text-end">ООО «Русская стратегия»</td>
+              </tr>
+              <tr>
+                <td>Руководитель</td>
+                <td class="text-end">Земляницын Александр Андреевич</td>
+              </tr>
+              <tr>
+                <td>Главный бухгалтер</td>
+                <td class="text-end">Маскаева Валентина Алексеевна</td>
+              </tr>
+              <tr>
+                <td>Действуют на основании</td>
+                <td class="text-end">Устава предприятия</td>
+              </tr>
+              <tr>
+                <td>Юридический адрес</td>
+                <td class="text-end">
+                  Россия, 456320, Челябинская область, г. Миасс, пр. Макеева, д.
+                  38, офис 4.
+                </td>
+              </tr>
+              <tr>
+                <td>Фактический адрес</td>
+                <td class="text-end">
+                  Россия, 456320, Челябинская область, г. Миасс, пр. Макеева, д.
+                  38, офис 4.
+                </td>
+              </tr>
+              <tr>
+                <td>Действующие номера телефонов/факс</td>
+                <td class="text-end">
+                  <a href="tel:83513257000">8 (3513) 257-000</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Бухгалтерия</td>
+                <td class="text-end">
+                  <a href="tel:83513258000">8 (3513) 258-000</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Отдел маркетинга</td>
+                <td class="text-end">
+                  <a href="tel:83513257111"
+                    >8 (3513) 257-111, 257-222, 257-333</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Адрес в Интернете</td>
+                <td class="text-end">
+                  <a href="https://uralzvs.ru">uralzvs.ru</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Электронная почта</td>
+                <td class="text-end">
+                  <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ИНН</td>
+                <td class="text-end">7415056370</td>
+              </tr>
+              <tr>
+                <td>КПП</td>
+                <td class="text-end">741501001</td>
+              </tr>
+              <tr>
+                <td>ОКПО</td>
+                <td class="text-end">99293177</td>
+              </tr>
+              <tr>
+                <td>ОГРН</td>
+                <td class="text-end">1077415003874</td>
+              </tr>
+              <tr>
+                <td>ОКВЭД</td>
+                <td class="text-end">45.2</td>
+              </tr>
+              <tr>
+                <td>ОКОГУ</td>
+                <td class="text-end">49013</td>
+              </tr>
+              <tr>
+                <td>ОКОПФ</td>
+                <td class="text-end">65</td>
+              </tr>
+              <tr>
+                <td>ОКТМО</td>
+                <td class="text-end">71701000</td>
+              </tr>
+              <tr>
+                <td>Расчетный счет</td>
+                <td class="text-end">40702810628030000114</td>
+              </tr>
+              <tr>
+                <td>Полное наименование банка</td>
+                <td class="text-end">В ПАО «Челябинвестбанк» г. Челябинск</td>
+              </tr>
+              <tr>
+                <td>Корреспондентский счет</td>
+                <td class="text-end">30101810400000000779</td>
+              </tr>
+              <tr>
+                <td>БИК</td>
+                <td class="text-end">047501779</td>
+              </tr>
+              <tr>
+                <td>Расчетный счет</td>
+                <td class="text-end">40702810004000455166</td>
+              </tr>
+              <tr>
+                <td>Полное наименование банка</td>
+                <td class="text-end">
+                  Уральский филиал АО «Райффайзенбанк» г. Екатеринбург
+                </td>
+              </tr>
+              <tr>
+                <td>Корреспондентский счет</td>
+                <td class="text-end">30101810100000000906</td>
+              </tr>
+              <tr>
+                <td>БИК</td>
+                <td class="text-end">046577906</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="img/лого.png" alt="logo" />
+      </div>
+      <div class="footer__menu">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Каталог продукции</a></li>
+            <li class="footer__item"><a href="#">О компании</a></li>
+            <li class="footer__item">
+              <a href="#">Фундамент на винтовых сваях</a>
+            </li>
+            <li class="footer__item"><a href="#">Проектировщикам</a></li>
+            <li class="footer__item"><a href="#">Новости</a></li>
+            <li class="footer__item"><a href="#">Полезные статьи </a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav mt-4">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Сертификаты</a></li>
+            <li class="footer__item"><a href="#">Фото</a></li>
+            <li class="footer__item"><a href="#">Отзывы</a></li>
+            <li class="footer__item"><a href="#">Города</a></li>
+            <li class="footer__item">
+              <a href="#">Политика обработки персональных данных </a>
+            </li>
+            <li class="footer__item"><a href="#">Карта сайта </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="footer__left">
+        <h6>
+          Южно-Уральский<br />
+          Завод винтовых свай
+        </h6>
+        <p>
+          Производство, продажа<br />
+          и монтаж свай и свайных<br />
+          фундаментов
+        </p>
+        <p>
+          <a href="https://uralzvs.ru/">www.uralzvs.ru</a>
+        </p>
+        <p>Рабочее время филиалов и центрального офиса:</p>
+        <p>
+          понедельник - пятница: 8:00-17:00<br />
+          обед: 12:00-13:00<br />
+          суббота, воскресенье: выходные дни
+        </p>
+        <p class="green">Время местное!</p>
+        <p class="copyright">Copyright - Егоза, 2023</p>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__grid">
+          <div class="footer__item item item--mobile">
+            <p class="item__text">Горячая линия</p>
+            <a class="item__tel" href="tel:88002222081">8 800 22 22 081</a>
+            <button
+              type="button"
+              class="item__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Заказать звонок
+            </button>
+          </div>
+          <div class="footer__item item item--mobile">
+            <p class="item__text">Мобильный телефон</p>
+            <a class="item__tel" href="tel:+79226356813">+7 922 635 68 13</a>
+            <button
+              type="button"
+              class="item__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#questionModal"
+            >
+              Задать вопрос
+            </button>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Москве</p>
+            <a class="item__tel" href="tel:+79226356813">+7 922 635 68 13</a>
+            <p class="item__text">
+              108814, Москва, Калужское шоссе, 24-й километр, д. 1, стр. 1. м.
+              Теплый Стан, БЦ “Высота”
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Миассе</p>
+            <a class="item__tel" href="tel:+73513289840">+7 351 328 98 40</a>
+            <p class="item__text">
+              456300, Челябинская область, г. Миасс, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Санкт-Петербурге</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              196084, г. Санкт-Петербург, ул. Воздухоплавательная, д. 19
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Челябинске</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              456300, г. Челябинск, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Екатеринбурге</p>
+            <a class="item__tel" href="tel:+74493488163">+7 449 348 81 63</a>
+            <p class="item__text">
+              620149, г. Екатеринбург, ул. Зоологическая улица, д. 9
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Уфе</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              450027, г. Уфа, ул. Сельская Богородская, д. 57/1456300, г.
+              Челябинск, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Тюмени</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              625008, г. Тюмень, ул. Республики, 250, офис 314
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Хабаровске</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              680051, г. Хабаровск, ул. Ворошилова, д. 22
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Астане</p>
+            <a class="item__tel" href="tel:+77272507727">+7 727 250 77 27</a>
+            <p class="item__text">010005, г. Астана, ул. Кенесары, д. 70</p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Алматы</p>
+            <a class="item__tel" href="tel:+77272503337">+7 727 250-33-37</a>
+            <p class="item__text">
+              050023, г. Алматы, мкр-н Баганашил, ул. Санаторная, д. 14
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <p class="footer__text">Электронная почта</p>
+        <a href="mailto:info@uralzvs.ru" class="footer__mail"
+          >info@uralzvs.ru</a
+        >
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        Все права на любые материалы, опубликованные на сайте, защищены в
+        соответствии с российским и международным законодательством об авторском
+        праве. Логотип «Егоза» является зарегистрированным товарным знаком и
+        охраняется законодательством РФ Авторские права на текстовую информацию,
+        фотографии, элементы дизайна (графические элементы и пр.) этого сайта
+        принадлежат владельцу сайта.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Заказать звонок</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputName1" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName1" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputTel1" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel1" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck1"
+                    />
+                    <label class="form-check-label" for="inputCheck1">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="questionModal"
+        tabindex="-1"
+        aria-labelledby="questionModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Задать вопрос</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputName2" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName2" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTel2" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel2" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail2" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail2" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputText2" class="form-label">Ваш вопрос</label>
+                  <textarea
+                    class="form-control"
+                    id="inputText2"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputFile2" class="form-label"
+                    >Приложить файл</label
+                  >
+                  <input class="form-control" type="file" id="inputFile2" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck2"
+                    />
+                    <label class="form-check-label" for="inputCheck2">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Initialize Wow animate -->
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
