@@ -931,6 +931,13 @@ ul {
 .section--grid .item {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.section--grid .item:hover {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .section--grid .item__image {
@@ -1047,6 +1054,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+  padding: 0 10px;
 }
 
 .section--list .item {
