@@ -15,7 +15,7 @@ body {
   }
 }
 
-.pagination {
+.breadcrumb {
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -33,6 +33,17 @@ body {
         display: inline-block;
       }
     }
+  }
+}
+
+.pagination {
+  margin-top: 50px !important;
+  margin: 0 auto;
+  justify-content: center;
+  border: 0 !important;
+  &-link,
+  &-item {
+    border: 0 !important;
   }
 }
 
