@@ -1362,7 +1362,7 @@ ul {
   color: #008cf0;
   font-size: 25px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .section--product-info .section__price span {
@@ -1372,14 +1372,12 @@ ul {
 
 .section--product-info .section__link {
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .section--product-info .section__btn {
   display: block;
   margin-top: 30px;
-  font-size: 25px;
-  padding: 10px 50px;
 }
 
 .section--product-info .section__btn:hover {
@@ -1775,6 +1773,19 @@ ul {
 
   .section--product-info {
     margin: 100px 0;
+  }
+
+  .section--product-info .section__price {
+    margin-top: 50px;
+  }
+
+  .section--product-info .section__link {
+    margin-top: 30px;
+  }
+
+  .section--product-info .section__btn {
+    font-size: 25px;
+    padding: 10px 50px;
   }
 
   .footer__top {
