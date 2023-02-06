@@ -11,6 +11,11 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -189,304 +194,498 @@
           <ul class="pagination">
             <li class="pagination__item">Главная</li>
             <li class="pagination__item">Каталог продукции</li>
+            <li class="pagination__item">Винтовые сваи шуруп</li>
           </ul>
         </div>
       </section>
 
-      <h1 class="page-title">Каталог продукции</h1>
+      <h1 class="page-title">Винтовые сваи шуруп</h1>
 
-      <section class="section section--grid">
+      <section class="section section--grid-2">
         <div class="container">
-          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
-            Винтовые сваи производства Завода винтовых свай Егоза
-          </h2>
           <div class="section__grid">
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
+            </div>
+            <div class="section__item item">
+              <div class="item__wrapper">
+                <img src="img/product/2.png" class="item__image" alt="" />
+                <div class="item__content">
+                  <h6 class="item__title">Свая шуруп 57 мм</h6>
+                  <p class="item__price">от 1139,49 руб.</p>
+                  <ul class="item__list">
+                    <li class="item__text active">
+                      <strong>Диаметр сваи:</strong> 76 мм.
+                    </li>
+                    <li class="item__text active">
+                      <strong>Длина сваи:</strong> 1000 / 1500 / 2000 / 3000 /
+                      4000 / 4500 / 5000 / 5500 / 6000 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Толщина стенки:</strong> 3.5 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Длина наконечника:</strong> 360 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Диаметр лопасти наконечника:</strong> 120 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса наконечника:</strong> 8.8 / 11.9 / 15.1 /
+                      18.2 / 21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 40.1 мм.
+                    </li>
+                    <li class="item__text">
+                      <strong>Количество витков:</strong> 5 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Шаг витка:</strong> 60 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Масса сваи:</strong> 8.8 / 11.9 / 15.1 / 18.2 /
+                      21.3 / 24.4 / 27.6 / 30.7 / 33.8 / 36.9 / 43.3 / 47 кг.
+                    </li>
+                    <li class="item__text">
+                      <strong>Наконечник:</strong> литой
+                    </li>
+                  </ul>
+                  <button type="button" class="item__link btn btn-link">
+                    Развернуть
+                  </button>
+                  <button type="button" class="item__btn btn--orange">
+                    Купить
+                  </button>
+                </div>
               </div>
-            </a>
+            </div>
+          </div>
+          <div class="section__footer">
+            <a href="#">показать все сваи типа «шуруп»</a>
+          </div>
+          <div class="section__text">
+            <p>
+              Винтовая свая типа «шуруп» имеет вид металлической трубы с
+              конусообразным наконечником и монтажным отверстием сверху.
+            </p>
+            <p>Литой наконечник оснащен узкой многовитковой лопастью.</p>
+            <p>
+              Внешне сваи с литым многовитковым наконечником напоминают
+              «саморез», со схожим принципом работы: наконечник разрезает и
+              уплотняет грунт, а лопасть, благодаря своему маленькому диаметру,
+              облегчает процесс завинчивания сваи.
+            </p>
+            <p>
+              Литой наконечник способствует более точному и быстрому монтажу
+              винтовых свай в сложных и мёрзлых грунтах.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section section--link">
-        <a href="#">Смотреть все сваи</a>
+      <section class="section section--feedback section--feedback-catalog">
+        <div class="container">
+          <p class="section__text">
+            Вы можете оставить заявку на расчет своего проекта нашими
+            специалистами.<br />
+            Срок расчета проекта 2 рабочих дня.
+          </p>
+
+          <button type="button" class="section__btn btn--orange">
+            Оставить заявку на проект
+          </button>
+
+          <p class="section__subtext">
+            После отправки формы мы свяжемся с Вами в течение 15 минут
+          </p>
+        </div>
       </section>
 
-      <section class="section section--grid">
+      <section class="section section--features-catalog">
         <div class="container">
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
-            Свайно-винтовой фундамент
+            Преимущества многовитковых свай типа “шуруп”
           </h2>
           <div class="section__grid">
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
+            <div
+              class="section__item item wow animate__fadeInUp"
+              data-wow-duration="1s"
+            >
+              <img src="img/features/2-1.png" alt="" class="item__image" />
+              <h5 class="item__title">Лучше подходят для плотных грунтов</h5>
+              <p class="item__text">
+                Благодаря фиксационным виткам они мягче входят в плотный грунт и
+                надежно в нем фиксируются
+              </p>
+            </div>
+            <div
+              class="section__item item wow animate__fadeInUp"
+              data-wow-duration="1s"
+            >
+              <img src="img/features/2-2.png" alt="" class="item__image" />
+              <h5 class="item__title">Долговечны и не требуют профилактики</h5>
+              <p class="item__text">
+                Сваи защищены от коррозии плотным слоем оцинковки. Срок их
+                эксплуатации без текущего ремонта в любых климатических условиях
+                — от 50 лет,
+              </p>
+            </div>
+            <div
+              class="wow animate__fadeInUp section__item item"
+              data-wow-duration="1s"
+            >
+              <img src="img/features/2-3.png" alt="" class="item__image" />
+              <h5 class="item__title">Монтируются без спецтехники</h5>
+              <p class="item__text">
+                Установка винтовых свай диаметром до 133 мм возможна без
+                привлечения спецтехники.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -759,248 +958,117 @@
         </div>
       </section>
 
-      <section class="section section--feedback">
+      <section class="section section--feedback section--feedback-catalog-2">
         <div class="container">
+          <h6 class="section__text">
+            Не можете определиться с выбором или затрудняетесь точно подсчитать
+            нужное количество свай?
+          </h6>
           <p class="section__text">
-            Вы можете оставить заявку на расчет своего проекта нашими
-            специалистами.<br />
-            Срок расчета проекта 2 рабочих дня.
+            Специалисты Завода винтовых свай с удовольствием помогут вам в
+            подборе оптимальной номенклатуры и расчете сметы для вашего проекта.
+          </p>
+          <p class="section__text">
+            Напишите нам, и мы свяжемся с Вами в течение 15 минут.
           </p>
 
-          <button type="button" class="btn--orange section__btn">
-            Оставить заявку на проект
+          <button type="button" class="section__btn btn--orange">
+            Рассчитать проект
           </button>
+        </div>
+      </section>
 
-          <p class="section__subtext">
-            После отправки формы мы свяжемся с Вами в течение 15 минут
+      <section class="section section--slider-catalog">
+        <div class="container">
+          <h2
+            class="section__title section__title--center wow animate__fadeIn"
+            data-wow-duration="1s"
+          >
+            Возможно, вас заинтересуют:
+          </h2>
+          <div class="swiper section__slider section__slider--catalog">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/product/2.png" alt="" />
+                  Винтовые сваи для вечномерзлых грунтов
+                </a>
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--feedback section--feedback-catalog-3">
+        <div class="container">
+          <h5 class="section__text">
+            На каждом этапе производства все изделия проходят строгий контроль
+            ОТК.
+          </h5>
+          <h5 class="section__text">
+            Мы гарантируем высочайшее качество наших свай!
+          </h5>
+          <p class="section__text">
+            Узнайте больше про условия сотрудничества, получите ответы на
+            вопросы по ассортименту и запросите персональное коммерческое
+            предложение у наших менеджеров по телефонам или электронной почте.
           </p>
-        </div>
-      </section>
 
-      <section class="section section--list">
-        <div class="container">
-          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
-            Фундамент на винтовых сваях:
-          </h2>
-
-          <div class="section__content">
-            <h3 class="section__subtitle">
-              Для индустриальных и промышленных зданий и сооружений
-            </h3>
-
-            <div class="section__list">
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-            </div>
-          </div>
-          <div class="section__content">
-            <h3 class="section__subtitle">
-              Для жилых и бытовых зданий и построек
-            </h3>
-
-            <div class="section__list">
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-              <div class="section__item item">
-                <img src="img/product/1.png" alt="" class="item__image" />
-                <p class="item__text">для детских площадок</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--grid section--grid-gray">
-        <div class="container">
-          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
-            Ограждающие конструкции производства Завода Егоза
-          </h2>
-          <div class="section__grid">
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-            <a href="#" class="section__item item">
-              <img
-                src="img/product/Многовитковые 4.png"
-                class="item__image"
-                alt=""
-              />
-              <div class="item__content">
-                <h6 class="item__title">Сваи шуруп</h6>
-                <p class="item__text">
-                  Винтовая свая «шуруп» имеет вид металлической трубы с
-                  конусообразным наконечником и монтажным отверстием сверху.
-                </p>
-                <p class="item__text">
-                  Литой наконечник оснащен узкой многовитковой лопастью.
-                </p>
-              </div>
-            </a>
-          </div>
+          <a href="#" class="section__btn btn btn-link"> Подробнее о нас... </a>
         </div>
       </section>
 
@@ -1307,6 +1375,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
       integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
@@ -1320,6 +1389,30 @@
     <!-- Initialize Wow animate -->
     <script>
       new WOW().init();
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".section__slider--catalog", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 100,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+        },
+      });
     </script>
   </body>
 </html>

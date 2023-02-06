@@ -36,4 +36,18 @@ $(document).ready(function () {
     });
   }
   // ! Menu end
+
+  //catalog cart
+
+  $("body").on("click", ".item__link", function () {
+    $(this).parents(".section__item.item").toggleClass("active");
+
+    console.log($(this).html().trim());
+
+    if ($(this).html().trim() === "Развернуть") {
+      $(this).html("Свернуть");
+    } else {
+      $(this).html("Развернуть");
+    }
+  });
 });
