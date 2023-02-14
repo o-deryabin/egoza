@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Егоза</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+
+    <button
+      class="btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
+
+    <form action="" class="header__search">
+      <input type="text" class="header__search-input" placeholder="Поиск по" />
+      <img src="img/лупа.png" alt="" class="header__search-icon" />
+    </form>
+
+    <div class="header__contacts">
+      <div class="header__contact header__phone">
+        <a href="tel:88002222081">8 800 222 20 81</a>
+      </div>
+      <div class="header__contact header__email">
+        <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+      </div>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="nav">
+  <div class="container">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="nav__item">
+        <a href="">Наши проекты</a>
+        <ul class="nav__list--2">
+          <li class="nav__item"><a href="#">второй уровень</a></li>
+          <li class="nav__item">
+            <a href="#">второй уровень</a>
+            <ul class="nav__list--3">
+              <li class="nav__item"><a href="#">третий уровень</a></li>
+              <li class="nav__item">
+                <a href="#">третий уровень </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item"><a href="">Доставка и оплата</a></li>
+      <li class="nav__item"><a href="">Гарантия</a></li>
+      <li class="nav__item"><a href="">Партнёрам</a></li>
+      <li class="nav__item"><a href="">О компании</a></li>
+      <li class="nav__item"><a href="">Отзывы</a></li>
+      <li class="nav__item"><a href="">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="header--mobile">
+  <div class="container header__container">
+    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+    <div class="header__burger"><span></span></div>
+  </div>
+</div>
+
+<div class="header-headings">
+  <div class="header-headings__backdrop"></div>
+  <div class="header-headings__menu">
+    <form action="" class="position-relative p-3">
+      <input type="text" class="form-control" placeholder="Поиск по" />
+    </form>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="menu__item menu__item_parent item-parent_js">
+        <a href="">Наши проекты</a>
+        <ul class="menu__submenu menu">
+          <li class="menu__item"><a href="#">второй уровень</a></li>
+          <li class="menu__item menu__item_parent item-parent_js">
+            <a href="#">второй уровень</a>
+            <ul class="menu__submenu menu">
+              <li class="menu__item"><a href="#">третий уровень</a></li>
+              <li class="menu__item">
+                <a href="#">третий уровень</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu__item"><a href="">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="">Гарантия</a></li>
+      <li class="menu__item"><a href="">Партнёрам</a></li>
+      <li class="menu__item"><a href="">О компании</a></li>
+      <li class="menu__item"><a href="">Отзывы</a></li>
+      <li class="menu__item"><a href="">Контакты</a></li>
+    </ul>
+    <button
+      class="btn dropdown-toggle mt-4"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="header__sity"><img src="img/geo.png" alt="" /> Москва</div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#">Миасса</a></li>
+      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+      <li><a class="dropdown-item" href="#">Челябинск</a></li>
+      <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+      <li><a class="dropdown-item" href="#">Уфа</a></li>
+      <li><a class="dropdown-item" href="#">Тюмень</a></li>
+      <li><a class="dropdown-item" href="#">Хабаровск</a></li>
+      <li><a class="dropdown-item" href="#">Астана</a></li>
+      <li><a class="dropdown-item" href="#">Алматы</a></li>
+    </ul>
+    <div class="my-4 p-3">
+      <div class="header__contact header__phone">
+        <a href="tel:88002222081">8 800 222 20 81</a>
+      </div>
+      <div class="header__contact header__email mt-2">
+        <a href="mailto:info@uralzvs.ru">info@uralzvs.ru</a>
+      </div>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#questionModal"
+      >
+        Задать вопрос
+      </button>
+      <button
+        type="button"
+        class="header__btn mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Заказать звонок
+      </button>
+    </div>
+  </div>
+</div>
+
+    <main>
+      <section class="section section--breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">Главная</li>
+            <li class="breadcrumb__item">О компании</li>
+            <li class="breadcrumb__item">Галерея</li>
+          </ul>
+        </div>
+      </section>
+
+      <h1 class="page-title page-title--blue">Галерея завода винтовых свай</h1>
+
+      <section class="section section--gallery-slider">
+        <div class="container">
+          <div class="section__slider slider">
+            <h2 class="slider__title">Производство</h2>
+            <div class="swiper section__slider section__slider--gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+              </div>
+              <div class="button-next">
+                <img src="img/arrow-next.png" alt="" />
+              </div>
+              <div class="button-prev">
+                <img src="img/arrow-prev.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="section__slider slider">
+            <h2 class="slider__title">Производство</h2>
+            <div class="swiper section__slider section__slider--gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+              </div>
+              <div class="button-next">
+                <img src="img/arrow-next.png" alt="" />
+              </div>
+              <div class="button-prev">
+                <img src="img/arrow-prev.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="section__slider slider">
+            <h2 class="slider__title">Продукция завода винтовых свай</h2>
+            <div class="swiper section__slider section__slider--gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+              </div>
+              <div class="button-next">
+                <img src="img/arrow-next.png" alt="" />
+              </div>
+              <div class="button-prev">
+                <img src="img/arrow-prev.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="section__slider slider">
+            <h2 class="slider__title">Продукция завода винтовых свай</h2>
+            <div class="swiper section__slider section__slider--gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-4.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/gallery/1-1.png" alt="" />
+                </div>
+              </div>
+              <div class="button-next">
+                <img src="img/arrow-next.png" alt="" />
+              </div>
+              <div class="button-prev">
+                <img src="img/arrow-prev.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--feedback">
+        <div class="container">
+          <p class="section__text">
+            Вы можете оставить заявку на расчет своего проекта нашими
+            специалистами.<br />
+            Срок расчета проекта 2 рабочих дня.
+          </p>
+
+          <button type="button" class="section__btn btn--orange">
+            Оставить заявку на расчет проекта
+          </button>
+
+          <p class="section__subtext">
+            После отправки формы мы свяжемся с Вами в течение 15 минут
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--partners">
+        <div class="container">
+          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
+            Нам доверяют свои объекты:
+          </h2>
+          <div class="swiper section__slider section__slider--partners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/partners/logo-rosseti.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Логотип_ГК_ФСК.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Росатом.svg.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/partners/Росатом.svg.png" alt="" />
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--sertificaty">
+        <div class="container">
+          <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
+            Производство и продукция сертифицированы
+          </h2>
+          <div class="swiper section__slider section__slider--sertificaty">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-1.png"
+                >
+                  <img src="img/sertificaty/cert-1.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-2.png"
+                >
+                  <img src="img/sertificaty/cert-2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-3.png"
+                >
+                  <img src="img/sertificaty/cert-3.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-6.png"
+                >
+                  <img src="img/sertificaty/cert-6.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-7.png"
+                >
+                  <img src="img/sertificaty/cert-7.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-8.png"
+                >
+                  <img src="img/sertificaty/cert-8.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-9.png"
+                >
+                  <img src="img/sertificaty/cert-9.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  data-fancybox="gallery"
+                  data-src="img/sertificaty/cert-10.png"
+                >
+                  <img src="img/sertificaty/cert-10.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="button-next">
+              <img src="img/arrow-next.png" alt="" />
+            </div>
+            <div class="button-prev">
+              <img src="img/arrow-prev.png" alt="" />
+            </div>
+          </div>
+          <div class="section__footer">
+            <a href="#" class="section__link">Подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--link">
+        <a href="" class="section__link">Вернуться на главную</a>
+      </section>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="img/лого.png" alt="logo" />
+      </div>
+      <div class="footer__menu">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Каталог продукции</a></li>
+            <li class="footer__item"><a href="#">О компании</a></li>
+            <li class="footer__item">
+              <a href="#">Фундамент на винтовых сваях</a>
+            </li>
+            <li class="footer__item"><a href="#">Проектировщикам</a></li>
+            <li class="footer__item"><a href="#">Новости</a></li>
+            <li class="footer__item"><a href="#">Полезные статьи </a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav mt-4">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Сертификаты</a></li>
+            <li class="footer__item"><a href="#">Фото</a></li>
+            <li class="footer__item"><a href="#">Отзывы</a></li>
+            <li class="footer__item"><a href="#">Города</a></li>
+            <li class="footer__item">
+              <a href="#">Политика обработки персональных данных </a>
+            </li>
+            <li class="footer__item"><a href="#">Карта сайта </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="footer__left">
+        <h6>
+          Южно-Уральский<br />
+          Завод винтовых свай
+        </h6>
+        <p>
+          Производство, продажа<br />
+          и монтаж свай и свайных<br />
+          фундаментов
+        </p>
+        <p>
+          <a href="https://uralzvs.ru/">www.uralzvs.ru</a>
+        </p>
+        <p>Рабочее время филиалов и центрального офиса:</p>
+        <p>
+          понедельник - пятница: 8:00-17:00<br />
+          обед: 12:00-13:00<br />
+          суббота, воскресенье: выходные дни
+        </p>
+        <p class="green">Время местное!</p>
+        <p class="copyright">Copyright - Егоза, 2023</p>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__grid">
+          <div class="footer__item item item--mobile">
+            <p class="item__text">Горячая линия</p>
+            <a class="item__tel" href="tel:88002222081">8 800 22 22 081</a>
+            <button
+              type="button"
+              class="item__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Заказать звонок
+            </button>
+          </div>
+          <div class="footer__item item item--mobile">
+            <p class="item__text">Мобильный телефон</p>
+            <a class="item__tel" href="tel:+79226356813">+7 922 635 68 13</a>
+            <button
+              type="button"
+              class="item__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#questionModal"
+            >
+              Задать вопрос
+            </button>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Москве</p>
+            <a class="item__tel" href="tel:+79226356813">+7 922 635 68 13</a>
+            <p class="item__text">
+              108814, Москва, Калужское шоссе, 24-й километр, д. 1, стр. 1. м.
+              Теплый Стан, БЦ “Высота”
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Миассе</p>
+            <a class="item__tel" href="tel:+73513289840">+7 351 328 98 40</a>
+            <p class="item__text">
+              456300, Челябинская область, г. Миасс, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Санкт-Петербурге</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              196084, г. Санкт-Петербург, ул. Воздухоплавательная, д. 19
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Челябинске</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              456300, г. Челябинск, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Екатеринбурге</p>
+            <a class="item__tel" href="tel:+74493488163">+7 449 348 81 63</a>
+            <p class="item__text">
+              620149, г. Екатеринбург, ул. Зоологическая улица, д. 9
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Уфе</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              450027, г. Уфа, ул. Сельская Богородская, д. 57/1456300, г.
+              Челябинск, ул. Объездная дорога, 4/49
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Тюмени</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              625008, г. Тюмень, ул. Республики, 250, офис 314
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Хабаровске</p>
+            <a class="item__tel" href="tel:+78002222081">+7 800 222 20 81</a>
+            <p class="item__text">
+              680051, г. Хабаровск, ул. Ворошилова, д. 22
+            </p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Астане</p>
+            <a class="item__tel" href="tel:+77272507727">+7 727 250 77 27</a>
+            <p class="item__text">010005, г. Астана, ул. Кенесары, д. 70</p>
+          </div>
+          <div class="footer__item item">
+            <p class="item__address">Офис в Алматы</p>
+            <a class="item__tel" href="tel:+77272503337">+7 727 250-33-37</a>
+            <p class="item__text">
+              050023, г. Алматы, мкр-н Баганашил, ул. Санаторная, д. 14
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <p class="footer__text">Электронная почта</p>
+        <a href="mailto:info@uralzvs.ru" class="footer__mail"
+          >info@uralzvs.ru</a
+        >
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        Все права на любые материалы, опубликованные на сайте, защищены в
+        соответствии с российским и международным законодательством об авторском
+        праве. Логотип «Егоза» является зарегистрированным товарным знаком и
+        охраняется законодательством РФ Авторские права на текстовую информацию,
+        фотографии, элементы дизайна (графические элементы и пр.) этого сайта
+        принадлежат владельцу сайта.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Заказать звонок</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputName1" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName1" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputTel1" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel1" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck1"
+                    />
+                    <label class="form-check-label" for="inputCheck1">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="questionModal"
+        tabindex="-1"
+        aria-labelledby="questionModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Задать вопрос</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputName2" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName2" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTel2" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel2" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail2" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail2" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputText2" class="form-label">Ваш вопрос</label>
+                  <textarea
+                    class="form-control"
+                    id="inputText2"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputFile2" class="form-label"
+                    >Приложить файл</label
+                  >
+                  <input class="form-control" type="file" id="inputFile2" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck2"
+                    />
+                    <label class="form-check-label" for="inputCheck2">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="calculateModal"
+        tabindex="-1"
+        aria-labelledby="calculateModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Рассчитать проект</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputName3" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName3" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTel3" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel3" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail3" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail3" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputText3" class="form-label"
+                    >Опишите проект</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="inputText3"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputFile3" class="form-label"
+                    >Приложить файл</label
+                  >
+                  <input class="form-control" type="file" id="inputFile3" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck3"
+                    />
+                    <label class="form-check-label" for="inputCheck3">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="submitModal"
+        tabindex="-1"
+        aria-labelledby="submitModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Рассчитать проект</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputName4" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName4" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTel4" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel4" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputText4" class="form-label">Комментарий</label>
+                  <textarea
+                    class="form-control"
+                    id="inputText4"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputFile4" class="form-label"
+                    >Приложить файл</label
+                  >
+                  <input class="form-control" type="file" id="inputFile4" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck4"
+                    />
+                    <label class="form-check-label" for="inputCheck4">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Initialize Wow animate -->
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".section__slider--partners", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 100,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+          },
+        },
+      });
+      var swiper = new Swiper(".section__slider--gallery", {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          992: {
+            slidesPerView: 4,
+          },
+        },
+      });
+      var swiper = new Swiper(".section__slider--sertificaty", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 100,
+          },
+          992: {
+            slidesPerView: 6,
+          },
+        },
+      });
+      var swiper = new Swiper(".section__slider--rewievs", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: true,
+
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

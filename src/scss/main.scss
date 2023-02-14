@@ -1436,6 +1436,19 @@
     }
   }
 
+  &--gallery-slider {
+    margin: 50px 0;
+    @media (min-width: 768px) {
+      margin: 100px 0;
+    }
+    .slider {
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 70px;
+      }
+    }
+  }
+
   &--services {
     background-color: $blue;
     color: #fff;

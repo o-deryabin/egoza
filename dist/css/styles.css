@@ -9,6 +9,10 @@ body.lock {
   margin-top: 50px;
 }
 
+.page-title--blue {
+  color: #008cf0;
+}
+
 .breadcrumb {
   margin-top: 50px;
   display: flex;
@@ -1558,6 +1562,14 @@ ul {
   max-width: 100%;
 }
 
+.section--gallery-slider {
+  margin: 50px 0;
+}
+
+.section--gallery-slider .slider {
+  margin-top: 30px;
+}
+
 .section--services {
   background-color: #008cf0;
   color: #fff;
@@ -2046,6 +2058,14 @@ ul {
   .section--product-info .section__btn {
     font-size: 25px;
     padding: 10px 50px;
+  }
+
+  .section--gallery-slider {
+    margin: 100px 0;
+  }
+
+  .section--gallery-slider .slider {
+    margin-top: 70px;
   }
 
   .section--services {
