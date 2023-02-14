@@ -1592,4 +1592,52 @@
       }
     }
   }
+
+  &--catalog-description {
+    margin: 50px 0;
+    @media (min-width: 992px) {
+      background-image: url("../img/partners/back.png");
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+    @media (min-width: 768px) {
+      margin: 100px 0;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .section {
+      &__image {
+        width: 100%;
+        margin: 0 0 20px;
+        @media (min-width: 768px) {
+          width: 50%;
+          &--left {
+            float: left;
+            margin: 0 50px 50px 0;
+          }
+          &--right {
+            float: right;
+            margin: 0px 0px 50px 50px;
+          }
+        }
+      }
+      &__subtitle {
+        color: $blue;
+        font-size: 25px;
+        margin-bottom: 30px;
+        @media (min-width: 768px) {
+          font-size: 25px;
+        }
+      }
+      &__footer {
+        margin-top: 30px;
+        @media (min-width: 768px) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
 }

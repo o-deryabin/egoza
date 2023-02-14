@@ -1653,6 +1653,30 @@ ul {
   margin-top: 50px;
 }
 
+.section--catalog-description {
+  margin: 50px 0;
+}
+
+.section--catalog-description p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section--catalog-description .section__image {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.section--catalog-description .section__subtitle {
+  color: #008cf0;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.section--catalog-description .section__footer {
+  margin-top: 30px;
+}
+
 .footer {
   background-color: #323232;
   padding: 50px 0;
@@ -2144,6 +2168,32 @@ ul {
     margin-top: 100px;
   }
 
+  .section--catalog-description {
+    margin: 100px 0;
+  }
+
+  .section--catalog-description .section__image {
+    width: 50%;
+  }
+
+  .section--catalog-description .section__image--left {
+    float: left;
+    margin: 0 50px 50px 0;
+  }
+
+  .section--catalog-description .section__image--right {
+    float: right;
+    margin: 0px 0px 50px 50px;
+  }
+
+  .section--catalog-description .section__subtitle {
+    font-size: 25px;
+  }
+
+  .section--catalog-description .section__footer {
+    margin-top: 50px;
+  }
+
   .footer__top {
     display: flex;
     justify-content: space-between;
@@ -2238,6 +2288,13 @@ ul {
   .section--feedback-catalog-2 {
     background-image: url(../img/background2.png);
     background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .section--catalog-description {
+    background-image: url("../img/partners/back.png");
+    background-size: contain;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
 
