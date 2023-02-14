@@ -112,7 +112,9 @@ body {
 }
 
 .swiper {
-  margin-top: 70px;
+  &:not(.no-margin) {
+    margin-top: 70px;
+  }
 
   &-wrapper {
     @media (min-width: 768px) {
