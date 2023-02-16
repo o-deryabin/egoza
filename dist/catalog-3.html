@@ -26,7 +26,7 @@
     <header class="header">
   <div class="container header__container">
     <div class="header__logo">
-      <a href="/dist/"><img src="img/лого.png" alt="logo" /></a>
+      <a href="/egoza/dist/"><img src="img/лого.png" alt="logo" /></a>
     </div>
 
     <button
@@ -86,7 +86,7 @@
         <a href="/egoza/dist/catalog">Каталог продукции</a>
       </li>
       <li class="nav__item">
-        <a href="">Наши проекты</a>
+        <a href="/egoza/dist/gallery">Наши проекты</a>
         <ul class="nav__list--2">
           <li class="nav__item"><a href="#">второй уровень</a></li>
           <li class="nav__item">
@@ -103,7 +103,26 @@
       <li class="nav__item"><a href="">Доставка и оплата</a></li>
       <li class="nav__item"><a href="">Гарантия</a></li>
       <li class="nav__item"><a href="">Партнёрам</a></li>
-      <li class="nav__item"><a href="/egoza/dist/about.html">О компании</a></li>
+      <li class="nav__item">
+        <a href="/egoza/dist/about">О компании</a>
+        <ul class="nav__list--2 menu">
+          <li class="nav__item">
+            <a href="/egoza/dist/news">Второй уровень</a>
+          </li>
+          <li class="nav__item">
+            <a href="/egoza/dist/news">Новости</a>
+            <ul class="nav__list--3 menu">
+              <li class="nav__item"><a href="#">третий уровень</a></li>
+              <li class="nav__item">
+                <a href="/egoza/dist/news-2"
+                  >«Русская стратегия» на 27-ой Международной выставке Securika
+                  Moscow 2022</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li class="nav__item"><a href="">Отзывы</a></li>
       <li class="nav__item"><a href="/egoza/dist/contacts">Контакты</a></li>
     </ul>
@@ -126,26 +145,35 @@
       <input type="text" class="form-control" placeholder="Поиск по" />
     </form>
     <ul class="menu__list">
-      <li class="menu__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="menu__item">
+        <a href="/egoza/dist/catalog">Каталог продукции</a>
+      </li>
+      <li class="menu__item">
+        <a href="/egoza/dist/gallery">Наши проекты</a>
+      </li>
+      <li class="menu__item"><a href="">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="">Гарантия</a></li>
+      <li class="menu__item"><a href="">Партнёрам</a></li>
       <li class="menu__item menu__item_parent item-parent_js">
-        <a href="">Наши проекты</a>
+        <a href="/egoza/dist/about">О компании</a>
         <ul class="menu__submenu menu">
-          <li class="menu__item"><a href="#">второй уровень</a></li>
+          <li class="menu__item">
+            <a href="/egoza/dist/news">Второй уровень</a>
+          </li>
           <li class="menu__item menu__item_parent item-parent_js">
-            <a href="#">второй уровень</a>
+            <a href="/egoza/dist/news">Новости</a>
             <ul class="menu__submenu menu">
               <li class="menu__item"><a href="#">третий уровень</a></li>
               <li class="menu__item">
-                <a href="#">третий уровень</a>
+                <a href="/egoza/dist/news-2"
+                  >«Русская стратегия» на 27-ой Международной выставке Securika
+                  Moscow 2022</a
+                >
               </li>
             </ul>
           </li>
         </ul>
       </li>
-      <li class="menu__item"><a href="">Доставка и оплата</a></li>
-      <li class="menu__item"><a href="">Гарантия</a></li>
-      <li class="menu__item"><a href="">Партнёрам</a></li>
-      <li class="menu__item"><a href="/egoza/dist/about">О компании</a></li>
       <li class="menu__item"><a href="">Отзывы</a></li>
       <li class="menu__item"><a href="/egoza/dist/contacts">Контакты</a></li>
     </ul>
@@ -1738,7 +1766,12 @@
             Напишите нам, и мы свяжемся с Вами в течение 15 минут.
           </p>
 
-          <button type="button" class="section__btn btn--orange">
+          <button
+            type="button"
+            class="section__btn btn--orange"
+            data-bs-toggle="modal"
+            data-bs-target="#calculateModal"
+          >
             Рассчитать проект
           </button>
         </div>
@@ -1822,8 +1855,12 @@
       </section>
 
       <section class="section section--link">
-        <a href="" class="section__link">Вернуться в общий каталог</a>
-        <a href="" class="section__link">Вернуться в каталог свай шуруп</a>
+        <a href="/egoza/dist/catalog" class="section__link"
+          >Вернуться в общий каталог</a
+        >
+        <a href="/egoza/dist/catalog-2" class="section__link"
+          >Вернуться в каталог свай шуруп</a
+        >
       </section>
 
       <section class="section section--feedback section--feedback-catalog-3">
@@ -1841,12 +1878,14 @@
             предложение у наших менеджеров по телефонам или электронной почте.
           </p>
 
-          <a href="#" class="section__btn btn btn-link"> Подробнее о нас... </a>
+          <a href="/egoza/dist/about" class="section__btn btn btn-link">
+            Подробнее о нас...
+          </a>
         </div>
       </section>
 
       <section class="section section--link">
-        <a href="" class="section__link">Вернуться на главную</a>
+        <a href="/egoza/dist/" class="section__link">Вернуться на главную</a>
       </section>
 
       <footer class="footer">
@@ -2129,6 +2168,76 @@
                       id="inputCheck2"
                     />
                     <label class="form-check-label" for="inputCheck2">
+                      Ознакомился с <a href="#">политикой конфидециальности</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="calculateModal"
+        tabindex="-1"
+        aria-labelledby="calculateModal"
+        aria-hidden="true"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5">Рассчитать проект</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputName3" class="form-label">Имя</label>
+                  <input type="text" class="form-control" id="inputName3" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTel3" class="form-label">Телефон</label>
+                  <input type="text" class="form-control" id="inputTel3" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail3" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail3" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputText3" class="form-label"
+                    >Опишите проект</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="inputText3"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputFile3" class="form-label"
+                    >Приложить файл</label
+                  >
+                  <input class="form-control" type="file" id="inputFile3" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inputCheck3"
+                    />
+                    <label class="form-check-label" for="inputCheck3">
                       Ознакомился с <a href="#">политикой конфидециальности</a>
                     </label>
                   </div>

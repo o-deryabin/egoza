@@ -114,7 +114,7 @@
             </div>
           </div>
           <div class="section__footer mt-3">
-            <a href="#">Перейти в фотогалерею</a>
+            <a href="/egoza/dist/gallery">Перейти в фотогалерею</a>
           </div>
         </div>
       </section>
@@ -159,7 +159,12 @@
             Срок расчета проекта 2 рабочих дня.
           </p>
 
-          <button type="button" class="section__btn btn--orange">
+          <button
+            type="button"
+            class="section__btn btn--orange"
+            data-bs-toggle="modal"
+            data-bs-target="#calculateModal"
+          >
             Оставить заявку на расчет проекта
           </button>
 
@@ -355,7 +360,9 @@
             </div>
           </div>
           <div class="section__footer">
-            <a href="#" class="section__link">Подробнее</a>
+            <a href="/egoza/dist/sertificaty" class="section__link"
+              >Подробнее</a
+            >
           </div>
         </div>
       </section>
@@ -416,7 +423,7 @@
       </section>
 
       <section class="section section--link">
-        <a href="" class="section__link">Вернуться на главную</a>
+        <a href="/egoza/dist/" class="section__link">Вернуться на главную</a>
       </section>
 
       @@include('html/footer.html')

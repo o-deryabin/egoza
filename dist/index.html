@@ -29,7 +29,7 @@
     <header class="header">
   <div class="container header__container">
     <div class="header__logo">
-      <a href="/dist/"><img src="img/лого.png" alt="logo" /></a>
+      <a href="/egoza/dist/"><img src="img/лого.png" alt="logo" /></a>
     </div>
 
     <button
@@ -89,7 +89,7 @@
         <a href="/egoza/dist/catalog">Каталог продукции</a>
       </li>
       <li class="nav__item">
-        <a href="">Наши проекты</a>
+        <a href="/egoza/dist/gallery">Наши проекты</a>
         <ul class="nav__list--2">
           <li class="nav__item"><a href="#">второй уровень</a></li>
           <li class="nav__item">
@@ -106,7 +106,26 @@
       <li class="nav__item"><a href="">Доставка и оплата</a></li>
       <li class="nav__item"><a href="">Гарантия</a></li>
       <li class="nav__item"><a href="">Партнёрам</a></li>
-      <li class="nav__item"><a href="/egoza/dist/about.html">О компании</a></li>
+      <li class="nav__item">
+        <a href="/egoza/dist/about">О компании</a>
+        <ul class="nav__list--2 menu">
+          <li class="nav__item">
+            <a href="/egoza/dist/news">Второй уровень</a>
+          </li>
+          <li class="nav__item">
+            <a href="/egoza/dist/news">Новости</a>
+            <ul class="nav__list--3 menu">
+              <li class="nav__item"><a href="#">третий уровень</a></li>
+              <li class="nav__item">
+                <a href="/egoza/dist/news-2"
+                  >«Русская стратегия» на 27-ой Международной выставке Securika
+                  Moscow 2022</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li class="nav__item"><a href="">Отзывы</a></li>
       <li class="nav__item"><a href="/egoza/dist/contacts">Контакты</a></li>
     </ul>
@@ -129,26 +148,35 @@
       <input type="text" class="form-control" placeholder="Поиск по" />
     </form>
     <ul class="menu__list">
-      <li class="menu__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="menu__item">
+        <a href="/egoza/dist/catalog">Каталог продукции</a>
+      </li>
+      <li class="menu__item">
+        <a href="/egoza/dist/gallery">Наши проекты</a>
+      </li>
+      <li class="menu__item"><a href="">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="">Гарантия</a></li>
+      <li class="menu__item"><a href="">Партнёрам</a></li>
       <li class="menu__item menu__item_parent item-parent_js">
-        <a href="">Наши проекты</a>
+        <a href="/egoza/dist/about">О компании</a>
         <ul class="menu__submenu menu">
-          <li class="menu__item"><a href="#">второй уровень</a></li>
+          <li class="menu__item">
+            <a href="/egoza/dist/news">Второй уровень</a>
+          </li>
           <li class="menu__item menu__item_parent item-parent_js">
-            <a href="#">второй уровень</a>
+            <a href="/egoza/dist/news">Новости</a>
             <ul class="menu__submenu menu">
               <li class="menu__item"><a href="#">третий уровень</a></li>
               <li class="menu__item">
-                <a href="#">третий уровень</a>
+                <a href="/egoza/dist/news-2"
+                  >«Русская стратегия» на 27-ой Международной выставке Securika
+                  Moscow 2022</a
+                >
               </li>
             </ul>
           </li>
         </ul>
       </li>
-      <li class="menu__item"><a href="">Доставка и оплата</a></li>
-      <li class="menu__item"><a href="">Гарантия</a></li>
-      <li class="menu__item"><a href="">Партнёрам</a></li>
-      <li class="menu__item"><a href="/egoza/dist/about">О компании</a></li>
       <li class="menu__item"><a href="">Отзывы</a></li>
       <li class="menu__item"><a href="/egoza/dist/contacts">Контакты</a></li>
     </ul>
@@ -466,7 +494,9 @@
             </div>
           </div>
           <div class="section__footer">
-            <a href="#" class="section__link">Полный каталог</a>
+            <a href="/egoza/dist/catalog" class="section__link"
+              >Полный каталог</a
+            >
           </div>
         </div>
       </section>
@@ -542,7 +572,7 @@
             <img src="img/about/background2.png" alt="" />
           </div>
           <div class="section__footer">
-            <a href="">Подробнее о компании</a>
+            <a href="/egoza/dist/about">Подробнее о компании</a>
           </div>
         </div>
       </section>
@@ -661,7 +691,9 @@
             </div>
           </div>
           <div class="section__footer">
-            <a href="#" class="section__link">Подробнее</a>
+            <a href="/egoza/dist/sertificaty" class="section__link"
+              >Подробнее</a
+            >
           </div>
         </div>
       </section>
