@@ -34,14 +34,35 @@
             }
           }
         }
-        &:nth-child(2)::before {
-          background-color: rgba(0, 144, 255, 0.8);
+        &:nth-child(2) {
+          &::before {
+            background-color: rgba(0, 144, 255, 0.8);
+          }
+          &:hover {
+            &::before {
+              background-color: rgb(0, 144, 255);
+            }
+          }
         }
-        &:nth-child(3)::before {
-          background-color: rgba(255, 120, 0, 0.8);
+        &:nth-child(3) {
+          &::before {
+            background-color: rgba(255, 120, 0, 0.8);
+          }
+          &:hover {
+            &::before {
+              background-color: rgb(255, 120, 0);
+            }
+          }
         }
-        &:nth-child(4)::before {
-          background-color: rgba(115, 196, 0, 0.8);
+        &:nth-child(4) {
+          &::before {
+            background-color: rgba(115, 196, 0, 0.8);
+          }
+          &:hover {
+            &::before {
+              background-color: rgb(115, 196, 0);
+            }
+          }
         }
         &--animate {
           &:hover {
@@ -401,6 +422,12 @@
       &__title {
         font-weight: 600;
         font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -884,7 +911,7 @@
     }
 
     &-gray {
-      background-color: #fafafa;
+      background-color: rgb(243, 243, 243);
 
       padding: 50px 0;
       -webkit-box-shadow: 0px 0px 43px -1px rgba(0, 0, 0, 0.2);
@@ -1096,6 +1123,16 @@
         margin-top: 70px;
       }
 
+      &--2 {
+        &:not(.active) {
+          .tab__item {
+            &:not(.active) {
+              display: none;
+            }
+          }
+        }
+      }
+
       &__header {
         display: flex;
         align-items: center;
@@ -1117,13 +1154,86 @@
 
       &-content {
         margin-top: 50px;
+        overflow: auto;
       }
 
       &-pane {
         img {
-          width: 100%;
+          max-width: 100%;
         }
       }
+    }
+
+    .table {
+      @media (max-width: 767px) {
+        width: 600px;
+        overflow-x: auto;
+      }
+      thead {
+        th {
+          height: 50px;
+          background-color: #cbe5f5;
+          margin-right: 20px;
+          @media (min-width: 768px) {
+            height: 70px;
+            &:first-child {
+              padding-left: 50px;
+            }
+          }
+          &:not(:first-child) {
+            border-left: 3px solid #f1f1f1;
+            @media (min-width: 768px) {
+              border-left: 30px solid #f1f1f1;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-top: 3px solid #f1f1f1;
+          @media (min-width: 768px) {
+            &:first-child {
+              border-top: 30px solid #f1f1f1;
+            }
+          }
+        }
+      }
+      td,
+      th {
+        font-size: 12px;
+        @media (min-width: 768px) {
+          padding: 15px 0;
+          font-size: 20px;
+          &:first-child {
+            padding-left: 50px;
+          }
+        }
+      }
+
+      td {
+        &:not(:first-child) {
+          text-align: center;
+        }
+      }
+      &__image {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .blue {
+        color: $blue;
+        font-weight: 600;
+        margin-right: 30px;
+      }
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+      background-color: #cbe5f5;
+      --bs-table-accent-bg: none;
     }
   }
 
@@ -1290,10 +1400,10 @@
     }
 
     a {
-      color: #000;
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
+      margin: 0 20px;
       &:hover {
         opacity: 0.7;
       }
@@ -1388,9 +1498,11 @@
   }
 
   &--slider-catalog {
-    margin-top: 50px;
+    padding-top: 50px;
+    background-image: url("../img/partners/back.png");
+    background-size: cover;
     @media (min-width: 768px) {
-      margin-top: 100px;
+      padding-top: 100px;
     }
 
     text-align: center;

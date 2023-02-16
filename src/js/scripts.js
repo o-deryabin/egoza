@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   //catalog cart
 
-  $("body").on("click", ".item__link", function () {
+  $("body").on("click", ".section--grid-2 .item__link", function () {
     $(this).parents(".section__item.item").toggleClass("active");
 
     console.log($(this).html().trim());
@@ -50,4 +50,18 @@ $(document).ready(function () {
       $(this).html("Развернуть");
     }
   });
+
+  $("body").on("click", ".section--tabs .tab__btn", function () {
+    $(this).parents(".tab").toggleClass("active");
+
+    console.log($(this).html().trim());
+
+    if ($(this).html().trim() === "Показать полностью") {
+      $(this).html("Свернуть");
+    } else {
+      $(this).html("Показать полностью");
+    }
+  });
+
+  // ! catalog cart
 });

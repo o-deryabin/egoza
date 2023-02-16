@@ -28,7 +28,9 @@
   <body>
     <header class="header">
   <div class="container header__container">
-    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+    <div class="header__logo">
+      <a href="/dist/"><img src="img/лого.png" alt="logo" /></a>
+    </div>
 
     <button
       class="btn dropdown-toggle"
@@ -83,7 +85,7 @@
 <nav class="nav">
   <div class="container">
     <ul class="nav__list">
-      <li class="nav__item"><a href="/catalog">Каталог продукции</a></li>
+      <li class="nav__item"><a href="/dist/catalog">Каталог продукции</a></li>
       <li class="nav__item">
         <a href="">Наши проекты</a>
         <ul class="nav__list--2">
@@ -102,16 +104,18 @@
       <li class="nav__item"><a href="">Доставка и оплата</a></li>
       <li class="nav__item"><a href="">Гарантия</a></li>
       <li class="nav__item"><a href="">Партнёрам</a></li>
-      <li class="nav__item"><a href="">О компании</a></li>
+      <li class="nav__item"><a href="/dist/about.html">О компании</a></li>
       <li class="nav__item"><a href="">Отзывы</a></li>
-      <li class="nav__item"><a href="">Контакты</a></li>
+      <li class="nav__item"><a href="/dist/contacts">Контакты</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="header--mobile">
   <div class="container header__container">
-    <div class="header__logo"><img src="img/лого.png" alt="logo" /></div>
+    <div class="header__logo">
+      <a href="#"><img src="img/лого.png" alt="logo" /></a>
+    </div>
     <div class="header__burger"><span></span></div>
   </div>
 </div>
@@ -546,25 +550,27 @@
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Нам доверяют свои объекты:
           </h2>
-          <div class="swiper section__slider section__slider--partners">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/partners/logo-rosseti.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Логотип_ГК_ФСК.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Росатом.svg.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Росатом.svg.png" alt="" />
+          <div class="position-relative">
+            <div class="swiper section__slider section__slider--partners">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/partners/logo-rosseti.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Логотип_ГК_ФСК.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Росатом.svg.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Росатом.svg.png" alt="" />
+                </div>
               </div>
             </div>
-            <div class="button-next">
+            <div class="button-next" id="button-next">
               <img src="img/arrow-next.png" alt="" />
             </div>
-            <div class="button-prev">
+            <div class="button-prev" id="button-prev">
               <img src="img/arrow-prev.png" alt="" />
             </div>
           </div>
@@ -576,77 +582,79 @@
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Производство и продукция сертифицированы
           </h2>
-          <div class="swiper section__slider section__slider--sertificaty">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-1.png"
-                >
-                  <img src="img/sertificaty/cert-1.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-2.png"
-                >
-                  <img src="img/sertificaty/cert-2.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-3.png"
-                >
-                  <img src="img/sertificaty/cert-3.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-6.png"
-                >
-                  <img src="img/sertificaty/cert-6.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-7.png"
-                >
-                  <img src="img/sertificaty/cert-7.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-8.png"
-                >
-                  <img src="img/sertificaty/cert-8.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-9.png"
-                >
-                  <img src="img/sertificaty/cert-9.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-10.png"
-                >
-                  <img src="img/sertificaty/cert-10.png" alt="" />
-                </a>
+          <div class="position-relative">
+            <div class="swiper section__slider section__slider--sertificaty">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-1.png"
+                  >
+                    <img src="img/sertificaty/cert-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-2.png"
+                  >
+                    <img src="img/sertificaty/cert-2.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-3.png"
+                  >
+                    <img src="img/sertificaty/cert-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-6.png"
+                  >
+                    <img src="img/sertificaty/cert-6.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-7.png"
+                  >
+                    <img src="img/sertificaty/cert-7.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-8.png"
+                  >
+                    <img src="img/sertificaty/cert-8.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-9.png"
+                  >
+                    <img src="img/sertificaty/cert-9.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-10.png"
+                  >
+                    <img src="img/sertificaty/cert-10.png" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="button-next">
+            <div class="button-next" id="button-next-2">
               <img src="img/arrow-next.png" alt="" />
             </div>
-            <div class="button-prev">
+            <div class="button-prev" id="button-prev-2">
               <img src="img/arrow-prev.png" alt="" />
             </div>
           </div>
@@ -661,30 +669,32 @@
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Отзывы и благодарности
           </h2>
-          <div class="swiper section__slider section__slider--rewievs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide">
-                <img src="img/rewievs/шаблон благодраности.png" alt="" />
-                <div class="slide__content">
-                  <p class="slide__text">
-                    Винтовые сваи производства Егозы изменили всю мою жизнь, не
-                    представляю, как жил без них раньше! Эти чудесные, идеально
-                    ровные витки, благородный насыщенный черный цвет,
-                    потрясающая гладкость, обеспечивающая идеальное скольжение в
-                    любом грунте! Забивал бы и завинчивал бесконечно, но свай
-                    было всего полтораста! Счастье было недолгим, но эти
-                    волшебные мгновения я вспоминаю до сих пор!
-                  </p>
-                  <h6 class="slide__name">
-                    Василий Алибабаевич, директор ООО “Рога и копыта”
-                  </h6>
+          <div class="position-relative">
+            <div class="swiper section__slider section__slider--rewievs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                  <img src="img/rewievs/шаблон благодраности.png" alt="" />
+                  <div class="slide__content">
+                    <p class="slide__text">
+                      Винтовые сваи производства Егозы изменили всю мою жизнь,
+                      не представляю, как жил без них раньше! Эти чудесные,
+                      идеально ровные витки, благородный насыщенный черный цвет,
+                      потрясающая гладкость, обеспечивающая идеальное скольжение
+                      в любом грунте! Забивал бы и завинчивал бесконечно, но
+                      свай было всего полтораста! Счастье было недолгим, но эти
+                      волшебные мгновения я вспоминаю до сих пор!
+                    </p>
+                    <h6 class="slide__name">
+                      Василий Алибабаевич, директор ООО “Рога и копыта”
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="button-next">
+            <div class="button-next" id="button-next-3">
               <img src="img/arrow-next.png" alt="" />
             </div>
-            <div class="button-prev">
+            <div class="button-prev" id="button-prev-3">
               <img src="img/arrow-prev.png" alt="" />
             </div>
           </div>
@@ -1256,8 +1266,8 @@
         autoplay: true,
 
         navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+          nextEl: "#button-next",
+          prevEl: "#button-prev",
         },
 
         breakpoints: {
@@ -1277,8 +1287,8 @@
         autoplay: true,
 
         navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+          nextEl: "#button-next-2",
+          prevEl: "#button-prev-2",
         },
 
         breakpoints: {
@@ -1296,8 +1306,8 @@
         autoplay: true,
 
         navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+          nextEl: "#button-next-3",
+          prevEl: "#button-prev-3",
         },
       });
     </script>
