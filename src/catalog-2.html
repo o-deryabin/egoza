@@ -30,7 +30,7 @@
           <ul class="breadcrumb">
             <li class="breadcrumb__item"><a href="/egoza/dist/">Главная</a></li>
             <li class="breadcrumb__item">
-              <a href="/egoza/dist/catalog/">Каталог продукции</a>
+              <a href="/egoza/dist/catalog">Каталог продукции</a>
             </li>
             <li class="breadcrumb__item">Винтовые сваи шуруп</li>
           </ul>
@@ -2140,7 +2140,12 @@
             Напишите нам, и мы свяжемся с Вами в течение 15 минут.
           </p>
 
-          <button type="button" class="section__btn btn--orange">
+          <button
+            type="button"
+            class="section__btn btn--orange"
+            data-bs-toggle="modal"
+            data-bs-target="#calculateModal"
+          >
             Рассчитать проект
           </button>
         </div>
