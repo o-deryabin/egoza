@@ -31,9 +31,11 @@
       <section class="section section--breadcrumb">
         <div class="container">
           <ul class="breadcrumb">
-            <li class="breadcrumb__item">Главная</li>
-            <li class="breadcrumb__item">О компании</li>
-            <li class="breadcrumb__item">Новости</li>
+            <li class="breadcrumb__item"><a href="/dist/">Главная</a></li>
+            <li class="breadcrumb__item">
+              <a href="/dist/about/">О компании</a>
+            </li>
+            <li class="breadcrumb__item"><a href="/dist/news/">Новости</a></li>
             <li class="breadcrumb__item">
               «Русская стратегия» на 27-ой Международной выставке Securika
               Moscow 2022
@@ -81,73 +83,81 @@
                     </ul>
                   </div>
                   <div class="col-lg-6">
-                    <div
-                      style="
-                        --swiper-navigation-color: #fff;
-                        --swiper-pagination-color: #fff;
-                      "
-                      class="swiper mySwiper2 no-margin"
-                    >
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-2.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-3.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-4.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-5.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-6.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-7.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-8.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-9.jpg"
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="https://swiperjs.com/demos/images/nature-10.jpg"
-                          />
+                    <div class="position-relative">
+                      <div
+                        style="
+                          --swiper-navigation-color: #fff;
+                          --swiper-pagination-color: #fff;
+                        "
+                        class="swiper mySwiper2 no-margin"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-1.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-2.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-3.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-4.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-5.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-6.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-7.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-8.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-9.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="https://swiperjs.com/demos/images/nature-10.jpg"
+                            />
+                          </div>
                         </div>
                       </div>
-                      <div class="button-next">
-                        <img src="img/arrow-next.png" alt="" />
+                      <div
+                        class="button-next button-next-thumbs"
+                        id="button-next"
+                      >
+                        <img src="img/arrow-next.png" alt="новость" />
                       </div>
-                      <div class="button-prev">
-                        <img src="img/arrow-prev.png" alt="" />
+                      <div
+                        class="button-prev button-prev-thumbs"
+                        id="button-prev"
+                      >
+                        <img src="img/arrow-prev.png" alt="новость" />
                       </div>
                     </div>
-                    <div thumbsSlider="" class="swiper mySwiper no-margin">
+                    <div thumbsSlider="" class="swiper mySwiper no-margin mt-3">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img
@@ -217,18 +227,23 @@
                     <a
                       href="https://www.youtube.com/watch?v=TpMwdm5JhiQ"
                       target="_blank"
-                      ><img class="section__icon" src="img/play.png" alt=""
+                      ><img
+                        class="section__icon"
+                        src="img/play.png"
+                        alt="новость"
                     /></a>
                     <p class="section__title">Видео с выставки</p>
                   </div>
-                  <!-- <img src="img/video.png" alt="" /> -->
+                  <!-- <img src="img/video.png" alt="новость" /> -->
                 </div>
                 <div class="section__links">
                   <a href="#" class="section__link section__link--prev">
-                    <img src="img/arrow-prev-1.png" alt="" /> Предыдущая новость
+                    <img src="img/arrow-prev-1.png" alt="новость" /> Предыдущая
+                    новость
                   </a>
                   <a href="#" class="section__link section__link--next">
-                    Следующая новость <img src="img/arrow-next-1.png" alt="" />
+                    Следующая новость
+                    <img src="img/arrow-next-1.png" alt="новость" />
                   </a>
                 </div>
               </div>
@@ -236,36 +251,48 @@
             <div class="col-lg-3">
               <aside class="section__aside">
                 <div class="aside">
-                  <img src="img/aside/1.png" alt="" class="aside__image" />
+                  <img
+                    src="img/aside/1.png"
+                    alt="новость"
+                    class="aside__image"
+                  />
                   <div class="aside__content">
                     <p class="aside__date">7 апреля 2022</p>
-                    <p class="aside__title">
+                    <a href="#" class="aside__title">
                       Приглашаем Вас посетить стенд компании "Егоза" на 27-ой
                       Международной выставке технических средств охраны Securika
                       Moscow 2022
-                    </p>
+                    </a>
                   </div>
                 </div>
                 <div class="aside">
-                  <img src="img/aside/1.png" alt="" class="aside__image" />
+                  <img
+                    src="img/aside/1.png"
+                    alt="новость"
+                    class="aside__image"
+                  />
                   <div class="aside__content">
                     <p class="aside__date">7 апреля 2022</p>
-                    <p class="aside__title">
+                    <a href="#" class="aside__title">
                       Приглашаем Вас посетить стенд компании "Егоза" на 27-ой
                       Международной выставке технических средств охраны Securika
                       Moscow 2022
-                    </p>
+                    </a>
                   </div>
                 </div>
                 <div class="aside">
-                  <img src="img/aside/1.png" alt="" class="aside__image" />
+                  <img
+                    src="img/aside/1.png"
+                    alt="новость"
+                    class="aside__image"
+                  />
                   <div class="aside__content">
                     <p class="aside__date">7 апреля 2022</p>
-                    <p class="aside__title">
+                    <a href="#" class="aside__title">
                       Приглашаем Вас посетить стенд компании "Егоза" на 27-ой
                       Международной выставке технических средств охраны Securika
                       Moscow 2022
-                    </p>
+                    </a>
                   </div>
                 </div>
               </aside>
@@ -297,26 +324,28 @@
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Нам доверяют свои объекты:
           </h2>
-          <div class="swiper section__slider section__slider--partners">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/partners/logo-rosseti.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Логотип_ГК_ФСК.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Росатом.svg.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/partners/Росатом.svg.png" alt="" />
+          <div class="position-relative">
+            <div class="swiper section__slider section__slider--partners">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/partners/logo-rosseti.png" alt="новость" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Логотип_ГК_ФСК.png" alt="новость" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Росатом.svg.png" alt="новость" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/partners/Росатом.svg.png" alt="новость" />
+                </div>
               </div>
             </div>
-            <div class="button-next">
-              <img src="img/arrow-next.png" alt="" />
+            <div class="button-next" id="button-next-2">
+              <img src="img/arrow-next.png" alt="новость" />
             </div>
-            <div class="button-prev">
-              <img src="img/arrow-prev.png" alt="" />
+            <div class="button-prev" id="button-prev-2">
+              <img src="img/arrow-prev.png" alt="новость" />
             </div>
           </div>
         </div>
@@ -327,78 +356,80 @@
           <h2 class="section__title wow animate__fadeIn" data-wow-duration="1s">
             Производство и продукция сертифицированы
           </h2>
-          <div class="swiper section__slider section__slider--sertificaty">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-1.png"
-                >
-                  <img src="img/sertificaty/cert-1.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-2.png"
-                >
-                  <img src="img/sertificaty/cert-2.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-3.png"
-                >
-                  <img src="img/sertificaty/cert-3.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-6.png"
-                >
-                  <img src="img/sertificaty/cert-6.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-7.png"
-                >
-                  <img src="img/sertificaty/cert-7.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-8.png"
-                >
-                  <img src="img/sertificaty/cert-8.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-9.png"
-                >
-                  <img src="img/sertificaty/cert-9.png" alt="" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  data-fancybox="gallery"
-                  data-src="img/sertificaty/cert-10.png"
-                >
-                  <img src="img/sertificaty/cert-10.png" alt="" />
-                </a>
+          <div class="position-relative">
+            <div class="swiper section__slider section__slider--sertificaty">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-1.png"
+                  >
+                    <img src="img/sertificaty/cert-1.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-2.png"
+                  >
+                    <img src="img/sertificaty/cert-2.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-3.png"
+                  >
+                    <img src="img/sertificaty/cert-3.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-6.png"
+                  >
+                    <img src="img/sertificaty/cert-6.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-7.png"
+                  >
+                    <img src="img/sertificaty/cert-7.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-8.png"
+                  >
+                    <img src="img/sertificaty/cert-8.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-9.png"
+                  >
+                    <img src="img/sertificaty/cert-9.png" alt="новость" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    data-fancybox="gallery"
+                    data-src="img/sertificaty/cert-10.png"
+                  >
+                    <img src="img/sertificaty/cert-10.png" alt="новость" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="button-next">
-              <img src="img/arrow-next.png" alt="" />
+            <div class="button-next" id="button-next-3">
+              <img src="img/arrow-next.png" alt="новость" />
             </div>
-            <div class="button-prev">
-              <img src="img/arrow-prev.png" alt="" />
+            <div class="button-prev" id="button-prev-3">
+              <img src="img/arrow-prev.png" alt="новость" />
             </div>
           </div>
           <div class="section__footer">
@@ -755,16 +786,6 @@
           },
         },
       });
-      var swiper = new Swiper(".section__slider--rewievs", {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: true,
-
-        navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
-        },
-      });
     </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -778,8 +799,8 @@
         loop: true,
         spaceBetween: 10,
         navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+          nextEl: "#button-next",
+          prevEl: "#button-prev",
         },
         thumbs: {
           swiper: swiper,
